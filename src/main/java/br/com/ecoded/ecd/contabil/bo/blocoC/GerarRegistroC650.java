@@ -13,7 +13,6 @@ public class GerarRegistroC650 {
 		sb.append("|").append(Util.preencheRegistro(registroC650.getDescr_cod_agl()));
 		sb.append("|").append(Util.preencheRegistro(registroC650.getVl_cta_fin()));
 		sb.append("|").append(Util.preencheRegistro(registroC650.getInd_dc_cta_fin()));
-
 		sb.append("|").append('\n');
 
 		return sb;

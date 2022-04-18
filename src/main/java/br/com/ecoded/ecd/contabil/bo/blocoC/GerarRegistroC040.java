@@ -7,7 +7,6 @@ import br.com.ecoded.ecd.contabil.util.Util;
 public class GerarRegistroC040 {
 
 	public static StringBuilder gerar(EcdContabil ecdContabil, RegistroC040 registroC040, StringBuilder sb) {
-		
 
 		sb.append("|").append(Util.preencheRegistro(registroC040.getReg()));
 		sb.append("|").append(Util.preencheRegistro(registroC040.getHash_ecd_rec()));

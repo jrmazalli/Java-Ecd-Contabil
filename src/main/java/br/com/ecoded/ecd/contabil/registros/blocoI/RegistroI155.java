@@ -11,12 +11,10 @@ public class RegistroI155 {
 	private String vl_cred;
 	private String vl_sld_fin;
 	private String ind_dc_fin;
-	private String vl_sld_ini_mf;
-	private String ind_dc_ini_mf;
-	private String vl_deb_mf;
-	private String vl_cred_mf;
-	private String vl_sld_fin_mf;
-	private String ind_dc_fin_mf;
+
+	public String getReg() {
+		return reg;
+	}
 
 	public String getCod_cta() {
 		return cod_cta;
@@ -80,58 +78,6 @@ public class RegistroI155 {
 
 	public void setInd_dc_fin(String ind_dc_fin) {
 		this.ind_dc_fin = ind_dc_fin;
-	}
-
-	public String getVl_sld_ini_mf() {
-		return vl_sld_ini_mf;
-	}
-
-	public void setVl_sld_ini_mf(String vl_sld_ini_mf) {
-		this.vl_sld_ini_mf = vl_sld_ini_mf;
-	}
-
-	public String getInd_dc_ini_mf() {
-		return ind_dc_ini_mf;
-	}
-
-	public void setInd_dc_ini_mf(String ind_dc_ini_mf) {
-		this.ind_dc_ini_mf = ind_dc_ini_mf;
-	}
-
-	public String getVl_deb_mf() {
-		return vl_deb_mf;
-	}
-
-	public void setVl_deb_mf(String vl_deb_mf) {
-		this.vl_deb_mf = vl_deb_mf;
-	}
-
-	public String getVl_cred_mf() {
-		return vl_cred_mf;
-	}
-
-	public void setVl_cred_mf(String vl_cred_mf) {
-		this.vl_cred_mf = vl_cred_mf;
-	}
-
-	public String getVl_sld_fin_mf() {
-		return vl_sld_fin_mf;
-	}
-
-	public void setVl_sld_fin_mf(String vl_sld_fin_mf) {
-		this.vl_sld_fin_mf = vl_sld_fin_mf;
-	}
-
-	public String getInd_dc_fin_mf() {
-		return ind_dc_fin_mf;
-	}
-
-	public void setInd_dc_fin_mf(String ind_dc_fin_mf) {
-		this.ind_dc_fin_mf = ind_dc_fin_mf;
-	}
-
-	public String getReg() {
-		return reg;
 	}
 
 }

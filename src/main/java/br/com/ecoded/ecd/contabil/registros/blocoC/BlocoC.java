@@ -1,13 +1,15 @@
 package br.com.ecoded.ecd.contabil.registros.blocoC;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BlocoC {
 
 	private RegistroC001 registroC001;
 	private RegistroC040 registroC040;
-	private RegistroC150 registroC150;
-	private RegistroC155 registroC155;
-	private RegistroC600 registroC600;
-	private RegistroC650 registroC650;
+	private List<RegistroC050> registroC050;
+	private List<RegistroC150> registroC150;
+	private List<RegistroC600> registroC600;
 	private RegistroC990 registroC990;
 
 	public RegistroC001 getRegistroC001() {
@@ -26,36 +28,25 @@ public class BlocoC {
 		this.registroC040 = registroC040;
 	}
 
-	public RegistroC150 getRegistroC150() {
+	public List<RegistroC050> getRegistroC050() {
+		if (registroC050 == null) {
+			registroC050 = new ArrayList<RegistroC050>();
+		}
+		return registroC050;
+	}
+
+	public List<RegistroC150> getRegistroC150() {
+		if (registroC150 == null) {
+			registroC150 = new ArrayList<RegistroC150>();
+		}
 		return registroC150;
 	}
 
-	public void setRegistroC150(RegistroC150 registroC150) {
-		this.registroC150 = registroC150;
-	}
-
-	public RegistroC155 getRegistroC155() {
-		return registroC155;
-	}
-
-	public void setRegistroC155(RegistroC155 registroC155) {
-		this.registroC155 = registroC155;
-	}
-
-	public RegistroC600 getRegistroC600() {
+	public List<RegistroC600> getRegistroC600() {
+		if (registroC600 == null) {
+			registroC600 = new ArrayList<RegistroC600>();
+		}
 		return registroC600;
-	}
-
-	public void setRegistroC600(RegistroC600 registroC600) {
-		this.registroC600 = registroC600;
-	}
-
-	public RegistroC650 getRegistroC650() {
-		return registroC650;
-	}
-
-	public void setRegistroC650(RegistroC650 registroC650) {
-		this.registroC650 = registroC650;
 	}
 
 	public RegistroC990 getRegistroC990() {

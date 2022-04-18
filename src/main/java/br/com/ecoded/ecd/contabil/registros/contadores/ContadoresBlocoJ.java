@@ -4,7 +4,6 @@ import br.com.ecoded.ecd.contabil.registros.blocoJ.BlocoJEnum;
 
 public class ContadoresBlocoJ {
 
-	// Bloco J
 	private int contRegistroJ001 = 0;
 	private int contRegistroJ005 = 0;
 	private int contRegistroJ100 = 0;
@@ -164,9 +163,6 @@ public class ContadoresBlocoJ {
 		return contRegistroJ990;
 	}
 
-	/**
-	 * @param contRegistroJ990 the contRegistroJ990 to set
-	 */
 	public void setContRegistroJ990(int contRegistroJ990) {
 		this.contRegistroJ990 = contRegistroJ990;
 	}

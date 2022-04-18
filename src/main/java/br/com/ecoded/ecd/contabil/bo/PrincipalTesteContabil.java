@@ -100,14 +100,12 @@ public class PrincipalTesteContabil {
 		return bloco0;
 	}
 
-//  ENCERRAMENTO DO BLOCO 0 - INFORMAR QUANTIDADE DE LINHAS
 	public static Bloco0 preencheRegistro0990(Bloco0 bloco0) {
 		Registro0990 registro0990 = new Registro0990();
 		bloco0.setRegistro0990(registro0990);
 		return bloco0;
 	}
 
-//	BLOCO I 
 	public static BlocoI preencheBlocoI() {
 		BlocoI blocoI = new BlocoI();
 		blocoI = preencheRegistroI001(blocoI);
@@ -124,7 +122,6 @@ public class PrincipalTesteContabil {
 		return blocoI;
 	}
 
-//  ABERTURA DO BLOCO I
 	public static BlocoI preencheRegistroI001(BlocoI blocoI) {
 		RegistroI001 registroI001 = new RegistroI001();
 		registroI001.setInd_mov("1");
@@ -132,7 +129,7 @@ public class PrincipalTesteContabil {
 		blocoI.setRegistroI001(registroI001);
 		return blocoI;
 	}
-	
+
 	public static BlocoI preencheRegistroI010(BlocoI blocoI) {
 		RegistroI010 registroI010 = new RegistroI010();
 		registroI010.setInd_esc("G");
@@ -180,11 +177,11 @@ public class PrincipalTesteContabil {
 		registroI053.setCod_idt("");
 		registroI053.setCod_cnt_corr("");
 		registroI053.setNat_sub_cnt("");
-		
+
 		registroI050.getRegistroI051().add(registroI051);
 		registroI050.getRegistroI052().add(registroI052);
 		registroI050.getRegistroI053().add(registroI053);
-		
+
 		return blocoI;
 	}
 
@@ -192,9 +189,9 @@ public class PrincipalTesteContabil {
 		RegistroI075 registroI075 = new RegistroI075();
 		registroI075.setCod_hist("13");
 		registroI075.setDescr_hist("S/NOTA FISCAL N.");
-		
+
 		blocoI.getRegistroI075().add(registroI075);
-		
+
 		return blocoI;
 	}
 
@@ -238,7 +235,7 @@ public class PrincipalTesteContabil {
 		registroI157.setInd_dc_ini_mf("");
 
 		registroI150.getRegistroI155().add(registroI155);
-		//registroI150.getRegistroI157().add(registroI157);
+		// registroI150.getRegistroI157().add(registroI157);
 
 		return blocoI;
 	}
@@ -260,10 +257,11 @@ public class PrincipalTesteContabil {
 		registroI250.setInd_dc("C");
 		registroI250.setNum_arq("");
 		registroI250.setCod_hist_pad("");
-		registroI250.setHist("CONTABILIZACAO DO RESULT. DA EQUIV. PATRIMONIAL  COM BASE NO PL DE 31/12/2019 DA CONTROLADA AFG BRASIL SA");
+		registroI250.setHist(
+				"CONTABILIZACAO DO RESULT. DA EQUIV. PATRIMONIAL  COM BASE NO PL DE 31/12/2019 DA CONTROLADA AFG BRASIL SA");
 		registroI250.setCod_part("");
-		//registroI250.setVl_dc_mf("");
-		//registroI250.setInd_dc_mf("");
+		// registroI250.setVl_dc_mf("");
+		// registroI250.setInd_dc_mf("");
 
 		registroI200.getRegistroI250().add(registroI250);
 
@@ -273,7 +271,7 @@ public class PrincipalTesteContabil {
 	public static BlocoI preencheRegistroI300(BlocoI blocoI) {
 		RegistroI300 registroI300 = new RegistroI300();
 		registroI300.setDt_bcte("");
-		//blocoI.getRegistroI300().add(registroI300);
+		// blocoI.getRegistroI300().add(registroI300);
 
 		RegistroI310 registroI310 = new RegistroI310();
 		registroI310.setCod_cta("");
@@ -283,7 +281,7 @@ public class PrincipalTesteContabil {
 		registroI310.setVal_deb_mf("");
 		registroI310.setVal_cred_mf("");
 
-		//registroI300.getRegistroI310().add(registroI310);
+		// registroI300.getRegistroI310().add(registroI310);
 
 		return blocoI;
 	}
@@ -340,7 +338,7 @@ public class PrincipalTesteContabil {
 		registroJ005.setId_dem("1");
 		registroJ005.setCab_dem("");
 		blocoJ.setRegistroJ005(registroJ005);
-		//blocoJ.getRegistroJ005().add(registroJ005);
+		// blocoJ.getRegistroJ005().add(registroJ005);
 
 		RegistroJ100 registroJ100 = new RegistroJ100();
 		registroJ100.setCod_agl("1");
@@ -385,7 +383,7 @@ public class PrincipalTesteContabil {
 		registroJ210.setVl_cta_fin("");
 		registroJ210.setInd_dc_cta_fin("");
 		registroJ210.setNotas_exp_ref("");
-		//blocoJ.getRegistroJ210().add(registroJ210);
+		// blocoJ.getRegistroJ210().add(registroJ210);
 
 		RegistroJ215 registroJ215 = new RegistroJ215();
 		registroJ215.setCod_hist_fat("");
@@ -393,7 +391,7 @@ public class PrincipalTesteContabil {
 		registroJ215.setVl_fat_cont("");
 		registroJ215.setInd_dc_fat("");
 
-		//registroJ210.getRegistroJ215().add(registroJ215);
+		// registroJ210.getRegistroJ215().add(registroJ215);
 
 		return blocoJ;
 	}
@@ -405,7 +403,7 @@ public class PrincipalTesteContabil {
 		registroJ800.setHash_rtf("");
 		registroJ800.setArq_rtf("");
 		registroJ800.setInd_fim_rtf("");
-		//blocoJ.getRegistroJ800().add(registroJ800);
+		// blocoJ.getRegistroJ800().add(registroJ800);
 		return blocoJ;
 	}
 
@@ -417,7 +415,7 @@ public class PrincipalTesteContabil {
 		registroJ801.setHash_rtf("");
 		registroJ801.setArq_rtf("");
 		registroJ801.setInd_fim_rtf("");
-		//blocoJ.getRegistroJ801().add(registroJ801);
+		// blocoJ.getRegistroJ801().add(registroJ801);
 		return blocoJ;
 	}
 
@@ -463,16 +461,13 @@ public class PrincipalTesteContabil {
 		registroJ935.setCod_cvm_auditor("");
 
 		registroJ900.getRegistroJ930().add(registroJ930);
-		//registroJ900.getRegistroJ932().add(registroJ932);
+		// registroJ900.getRegistroJ932().add(registroJ932);
 
-		//registroJ900.getRegistroJ935().add(registroJ935);
-		
+		// registroJ900.getRegistroJ935().add(registroJ935);
+
 		return blocoJ;
 	}
-	
 
-
-	// FIM BLOCO J
 	public static BlocoJ preencheRegistroJ990(BlocoJ blocoJ) {
 		RegistroJ990 registroJ990 = new RegistroJ990();
 		blocoJ.setRegistroJ990(registroJ990);

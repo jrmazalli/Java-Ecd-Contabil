@@ -13,9 +13,6 @@ public class RegistroC001 {
 		this.ind_dad = ind_dad;
 	}
 
-	/**
-	 * @return the reg
-	 */
 	public String getReg() {
 		return reg;
 	}

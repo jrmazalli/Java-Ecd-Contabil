@@ -1,5 +1,8 @@
 package br.com.ecoded.ecd.contabil.registros.blocoC;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RegistroC600 {
 
 	private final String reg = "C600";
@@ -7,6 +10,7 @@ public class RegistroC600 {
 	private String dt_fin;
 	private String id_dem;
 	private String cab_dem;
+	private List<RegistroC650> registroC650;
 
 	public String getDt_ini() {
 		return dt_ini;
@@ -43,5 +47,13 @@ public class RegistroC600 {
 	public String getReg() {
 		return reg;
 	}
+
+	public List<RegistroC650> getRegistroC650() {
+		if (registroC650 == null) {
+			registroC650 = new ArrayList<RegistroC650>();
+		}
+		return registroC650;
+	}
+
 
 }

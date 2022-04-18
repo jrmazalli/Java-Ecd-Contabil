@@ -11,8 +11,8 @@ public class GerarBlocoC {
 	private static StringBuilder sb = null;
 
 	public static StringBuilder gerar(EcdContabil ecdContabil, StringBuilder sbr) {
-		BlocoC blocoC = ecdContabil.getBlocoC();
 
+		BlocoC blocoC = ecdContabil.getBlocoC();
 		sb = sbr;
 
 		// REGISTROC001
@@ -27,67 +27,62 @@ public class GerarBlocoC {
 			ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC040);
 		}
 
-		// REGISTROC150
-		if (!Util.isEmpty(blocoC.getRegistroC150())) {
-			GerarRegistroC150.gerar(blocoC.getRegistroC150(), sb);
-			ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC150);
+		// REGISTROC050
+		if (!Util.isEmpty(blocoC.getRegistroC050())) {
+			blocoC.getRegistroC050().forEach(registroC050 -> {
+				GerarRegistroC050.gerar(registroC050, sb);
+				ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC050);
+
+				// REGISTROC051
+				if (!Util.isEmpty(registroC050.getRegistroC051())) {
+					GerarRegistroC051.gerar(registroC050.getRegistroC051(), sb);
+					ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC051);
+				}
+
+				// REGISTROC052
+				if (!Util.isEmpty(registroC050.getRegistroC052())) {
+					GerarRegistroC052.gerar(registroC050.getRegistroC052(), sb);
+					ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC052);
+				}
+			});
 		}
 
-		// REGISTROC155
-		if (!Util.isEmpty(blocoC.getRegistroC155())) {
-			GerarRegistroC155.gerar(blocoC.getRegistroC155(), sb);
-			ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC155);
+		// REGISTROC150
+		if (!Util.isEmpty(blocoC.getRegistroC150())) {
+			blocoC.getRegistroC150().forEach(registroC150 -> {
+				GerarRegistroC150.gerar(registroC150, sb);
+				ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC150);
+
+				// REGISTROC155
+				if (!Util.isEmpty(registroC150.getRegistroC155())) {
+					registroC150.getRegistroC155().forEach(registroC155 -> {
+						GerarRegistroC155.gerar(registroC155, sb);
+						ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC155);
+					});
+				}
+			});
 		}
 
 		// REGISTROC600
 		if (!Util.isEmpty(blocoC.getRegistroC600())) {
-			GerarRegistroC600.gerar(blocoC.getRegistroC600(), sb);
-			ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC600);
-		}
+			blocoC.getRegistroC600().forEach(registroC600 -> {
+				GerarRegistroC600.gerar(registroC600, sb);
+				ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC600);
 
-		// REGISTROC600
-		if (!Util.isEmpty(blocoC.getRegistroC650())) {
-			GerarRegistroC650.gerar(blocoC.getRegistroC650(), sb);
-			ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC650);
+				// REGISTROC650
+				if (!Util.isEmpty(registroC600.getRegistroC650())) {
+					registroC600.getRegistroC650().forEach(registroC650 -> {
+						GerarRegistroC650.gerar(registroC650, sb);
+						ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC650);
+					});
+				}
+			});
 		}
-
-//				// REGISTROC180
-//				if (!Util.isEmpty(registroC040.getRegistroC180())) {
-//					registroC040.getRegistroC180().forEach(registroC180 -> {
-//						GerarRegistroC180.gerar(registroC180, sb);
-//						ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC180);
-//
-//						// REGISTROC181
-//						if (!Util.isEmpty(registroC180.getRegistroC181())) {
-//							registroC180.getRegistroC181().forEach(registroC181 -> {
-//								GerarRegistroC181.gerar(registroC181, sb);
-//								ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC181);
-//							});
-//						}
-//
-//						// REGISTROC185
-//						if (!Util.isEmpty(registroC180.getRegistroC185())) {
-//							registroC180.getRegistroC185().forEach(registroC185 -> {
-//								GerarRegistroC185.gerar(registroC185, sb);
-//								ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC185);
-//							});
-//						}
-//
-//						// REGISTROC188
-//						if (!Util.isEmpty(registroC180.getRegistroC188())) {
-//							registroC180.getRegistroC188().forEach(registroC188 -> {
-//								GerarRegistroC188.gerar(registroC188, sb);
-//								ecdContabil.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC188);
-//							});
-//						}
-//					});
-//				}
-//
 
 		// REGISTROC990
 		if (ecdContabil.getContadoresBlocoC().getContRegistroC990() > 0) {
 			RegistroC990 registroC990 = new RegistroC990();
-			registroC990.setQtd_lin_0(String.valueOf(ecdContabil.getContadoresBlocoC().getContRegistroC990() + 1));
+			registroC990.setQtd_lin_c(String.valueOf(ecdContabil.getContadoresBlocoC().getContRegistroC990() + 1));
 
 			blocoC.setRegistroC990(registroC990);
 			GerarRegistroC990.gerar(blocoC.getRegistroC990(), sb);

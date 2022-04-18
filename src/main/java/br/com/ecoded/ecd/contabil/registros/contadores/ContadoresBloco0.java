@@ -4,7 +4,6 @@ import br.com.ecoded.ecd.contabil.registros.bloco0.Bloco0Enum;
 
 public class ContadoresBloco0 {
 
-	// BLOCO 0
 	private int contRegistro0000 = 0;
 	private int contRegistro0001 = 0;
 	private int contRegistro0007 = 0;
@@ -106,9 +105,6 @@ public class ContadoresBloco0 {
 		this.contRegistro0990 = contRegistro0990;
 	}
 
-	/**
-	 * @return the contRegistro0990
-	 */
 	public int getContRegistro0990() {
 		return contRegistro0990;
 	}

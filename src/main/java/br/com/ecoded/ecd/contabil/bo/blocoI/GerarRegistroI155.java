@@ -16,11 +16,6 @@ public class GerarRegistroI155 {
 		sb.append("|").append(Util.preencheRegistro(registroI155.getVl_cred()));
 		sb.append("|").append(Util.preencheRegistro(registroI155.getVl_sld_fin()));
 		sb.append("|").append(Util.preencheRegistro(registroI155.getInd_dc_fin()));
-		sb.append("|").append(Util.preencheRegistro(registroI155.getVl_sld_ini_mf()));
-		sb.append("|").append(Util.preencheRegistro(registroI155.getVl_deb_mf()));
-		sb.append("|").append(Util.preencheRegistro(registroI155.getVl_cred_mf()));
-		sb.append("|").append(Util.preencheRegistro(registroI155.getVl_sld_fin_mf()));
-		sb.append("|").append(Util.preencheRegistro(registroI155.getInd_dc_fin_mf()));
 		sb.append("|").append('\n');
 
 		return sb;
