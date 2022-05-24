@@ -61,11 +61,11 @@ public class PrincipalTesteContabil {
 		registro0000.setLecd("LECD");
 		registro0000.setDt_ini("01012019");
 		registro0000.setDt_fin("31122019");
-		registro0000.setNome("CLIENTE TESTE");
-		registro0000.setCnpj("00000000000100");
-		registro0000.setUf("SP");
-		registro0000.setIe("999999999");
-		registro0000.setCod_mun("9999999");
+		registro0000.setNome("MAZATEST");
+		registro0000.setCnpj("02209027000208");
+		registro0000.setUf("MT");
+		registro0000.setIe("124182292");
+		registro0000.setCod_mun("5103403");
 		registro0000.setIm("ISENTO");
 		registro0000.setInd_sit_esp("");
 		registro0000.setInd_sit_ini_per("0");
@@ -144,13 +144,13 @@ public class PrincipalTesteContabil {
 		registroI030.setNum_ord("22");
 		registroI030.setNat_livr("Escrituracao Contabil Digital do Livro Diario Geral");
 		registroI030.setQtd_lin("842116");
-		registroI030.setNome("CLIENTE TESTE");
-		registroI030.setNire("55500005555");
-		registroI030.setCnpj("00000000000000");
-		registroI030.setDt_arq("00000000");
+		registroI030.setNome("MAZATEST");
+		registroI030.setNire("51300005123");
+		registroI030.setCnpj("02209027000208");
+		registroI030.setDt_arq("06031974");
 		registroI030.setDt_arq_conv("");
-		registroI030.setDesc_mun("ASSIS");
-		registroI030.setDt_ex_social("00000000");
+		registroI030.setDesc_mun("CUIABA");
+		registroI030.setDt_ex_social("31122019");
 		blocoI.setRegistroI030(registroI030);
 		return blocoI;
 	}
@@ -258,7 +258,7 @@ public class PrincipalTesteContabil {
 		registroI250.setNum_arq("");
 		registroI250.setCod_hist_pad("");
 		registroI250.setHist(
-				"CONTABILIZACAO DO RESULT. DA EQUIV. PATRIMONIAL  COM BASE NO PL DE 31/12/2019 DA CONTROLADA CLIENTE TESTE");
+				"CONTABILIZACAO DO RESULT. DA EQUIV. PATRIMONIAL  COM BASE NO PL DE 31/12/2019 DA CONTROLADA MAZATEST");
 		registroI250.setCod_part("");
 		// registroI250.setVl_dc_mf("");
 		// registroI250.setInd_dc_mf("");
@@ -424,23 +424,23 @@ public class PrincipalTesteContabil {
 		registroJ900.setDnrc_encer("TERMO DE ENCERRAMENTO");
 		registroJ900.setNum_ord("22");
 		registroJ900.setNat_livro("Escrituracao Contabil Digital do Livro Diario Geral");
-		registroJ900.setNome("CLIENTE TESTE");
-		registroJ900.setQtd_lin("000000");
-		registroJ900.setDt_ini_escr("01012022");
-		registroJ900.setDt_fin_escr("31122022");
+		registroJ900.setNome("MAZATEST");
+		registroJ900.setQtd_lin("842116");
+		registroJ900.setDt_ini_escr("01012019");
+		registroJ900.setDt_fin_escr("31122019");
 		blocoJ.setRegistroJ900(registroJ900);
 
 		RegistroJ930 registroJ930 = new RegistroJ930();
-		registroJ930.setIdent_nom("JRMAZALLI");
-		registroJ930.setIdent_cpf_cnpj("00000000000");
+		registroJ930.setIdent_nom("MOÇO DA SILVA");
+		registroJ930.setIdent_cpf_cnpj("36686362816");
 		registroJ930.setIdent_qualif("Contador");
 		registroJ930.setCod_assin("900");
-		registroJ930.setInd_crc("25566000");
-		registroJ930.setEmail("contador@teste.com.br");
+		registroJ930.setInd_crc("288626O4");
+		registroJ930.setEmail("contador@mazatest.com.br");
 		registroJ930.setFone("1833220000");
 		registroJ930.setUf_crc("SP");
 		registroJ930.setNum_seq_crc("SP/2018/001");
-		registroJ930.setDt_crc("31122090");
+		registroJ930.setDt_crc("31120087");
 		registroJ930.setInd_resp_legal("N");
 
 		RegistroJ932 registroJ932 = new RegistroJ932();

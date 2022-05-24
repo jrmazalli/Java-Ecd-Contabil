@@ -59,8 +59,7 @@ public class GerarBloco9 {
 
 		// REGISTRO9999
 		if (!Util.isEmpty(bloco9.getRegistro9999())) {
-			int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin())
-					+ Integer.valueOf(bloco9.getRegistro9990().getQtd_lin_9());
+			int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin()) + Integer.valueOf(bloco9.getRegistro9990().getQtd_lin_9());
 			bloco9.getRegistro9999().setQtd_lin(String.valueOf(somatorio));
 			GerarRegistro9999.gerar(bloco9.getRegistro9999(), sb);
 		}

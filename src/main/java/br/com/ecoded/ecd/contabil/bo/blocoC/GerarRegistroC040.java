@@ -1,5 +1,7 @@
 package br.com.ecoded.ecd.contabil.bo.blocoC;
 
+import java.util.Optional;
+
 import br.com.ecoded.ecd.contabil.registros.EcdContabil;
 import br.com.ecoded.ecd.contabil.registros.blocoC.RegistroC040;
 import br.com.ecoded.ecd.contabil.util.Util;
@@ -14,7 +16,7 @@ public class GerarRegistroC040 {
 		sb.append("|").append(Util.preencheRegistro(registroC040.getDt_fin_ecd_rec()));
 		sb.append("|").append(Util.preencheRegistro(registroC040.getCnpj_ecd_rec()));
 		sb.append("|").append(Util.preencheRegistro(registroC040.getInd_esc()));
-		sb.append("|").append(Util.preencheRegistro(Util.getCodVersao(ecdContabil)));
+		sb.append("|").append(Util.preencheRegistro(Optional.ofNullable(registroC040.getCod_ver_lc()).orElse(Util.getCodVersao(ecdContabil))));
 		sb.append("|").append(Util.preencheRegistro(registroC040.getNum_ord()));
 		sb.append("|").append(Util.preencheRegistro(registroC040.getNat_livr()));
 		sb.append("|").append(Util.preencheRegistro(registroC040.getInd_sit_esp_ecd_rec()));

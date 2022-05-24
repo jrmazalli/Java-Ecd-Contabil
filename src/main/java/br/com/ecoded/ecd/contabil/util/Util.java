@@ -111,19 +111,19 @@ public final class Util {
 
 	public static String getCodVersao(EcdContabil ecdcontabil) {
 		if (versao2024(ecdcontabil.getBloco0().getRegistro0000().getDt_ini())) {
-			return "012";
+			return "12.00".toString();
 		} else if (versao2023(ecdcontabil.getBloco0().getRegistro0000().getDt_ini())) {
-			return "011";
+			return "11.00".toString();
 		} else if (versao2022(ecdcontabil.getBloco0().getRegistro0000().getDt_ini())) {
-			return "010";
+			return "10.00".toString();
 		} else if (versao2021(ecdcontabil.getBloco0().getRegistro0000().getDt_ini())) {
-			return "009";
+			return "9.00".toString();
 		} else if (versao2020(ecdcontabil.getBloco0().getRegistro0000().getDt_ini())) {
-			return "008";
+			return "8.00".toString();
 		} else if (versao2019(ecdcontabil.getBloco0().getRegistro0000().getDt_ini())) {
-			return "007";
+			return "7.00".toString();
 		} else if (versao2018(ecdcontabil.getBloco0().getRegistro0000().getDt_ini())) {
-			return "006";
+			return "6.00".toString();
 		} else {
 			return "ERRO_COD_VERSAO";
 		}

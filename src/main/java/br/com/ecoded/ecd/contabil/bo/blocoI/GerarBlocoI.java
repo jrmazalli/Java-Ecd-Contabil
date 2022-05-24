@@ -99,7 +99,7 @@ public class GerarBlocoI {
 
 				if (!Util.isEmpty(registroI200.getRegistroI250())) {
 					registroI200.getRegistroI250().forEach(registroI250 -> {
-						GerarRegistroI250.gerar(registroI250, sb);
+						GerarRegistroI250.gerar(ecdContabil, registroI250, sb);
 						ecdContabil.getContadoresBlocoI().incrementar(BlocoIEnum.RegistroI250);
 					});
 				}
@@ -127,7 +127,7 @@ public class GerarBlocoI {
 
 				if (!Util.isEmpty(registroI350.getRegistroI355())) {
 					registroI350.getRegistroI355().forEach(registroI355 -> {
-						GerarRegistroI355.gerar(registroI355, sb);
+						GerarRegistroI355.gerar(ecdContabil, registroI355, sb);
 						ecdContabil.getContadoresBlocoI().incrementar(BlocoIEnum.RegistroI355);
 					});
 				}

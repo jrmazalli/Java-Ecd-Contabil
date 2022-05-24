@@ -14,7 +14,7 @@ public class GerarRegistroC050 {
 		sb.append("|").append(Util.preencheRegistro(registroC050.getNivel()));
 		sb.append("|").append(Util.preencheRegistro(registroC050.getCod_cta()));
 		sb.append("|").append(Util.preencheRegistro(registroC050.getCod_cta_sup()));
-		sb.append("|").append(Util.preencheRegistro(registroC050.getCod_cta()));
+		sb.append("|").append(Util.preencheRegistro(registroC050.getCta()));
 		sb.append("|").append('\n');
 
 		return sb;

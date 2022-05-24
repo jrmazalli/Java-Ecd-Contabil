@@ -20,8 +20,8 @@ public class TesteEcdContabil {
 
 			sb = GerarEcdContabil.gerar(ecdContabil, sb);
 
-			System.out.println("Geração ECD Contabil");
-			System.out.println("--------------------");
+			System.out.println("			GERAÇÃO SPED - ECD Contabil			");
+			System.out.println("	");
 			System.out.println(sb.toString());
 			Util.criarPastaArquivo("C:/SPED-GERADO", "ecdcontabil.txt", sb.toString());
 			System.out.println("Arquivo criado na pasta:  C:/SPED-GERADO	");
