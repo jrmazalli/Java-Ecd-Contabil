@@ -6,7 +6,7 @@ import java.util.List;
 public class BlocoJ {
 
 	private RegistroJ001 registroJ001;
-	private RegistroJ005 registroJ005;
+	private List<RegistroJ005> registroJ005;
 	private List<RegistroJ210> registroJ210;
 	private List<RegistroJ800> registroJ800;
 	private List<RegistroJ801> registroJ801; // Se for arquivo substituto enviar so 1
@@ -21,11 +21,14 @@ public class BlocoJ {
 		this.registroJ001 = registroJ001;
 	}
 
-	public RegistroJ005 getRegistroJ005() {
+	public List<RegistroJ005> getRegistroJ005() {
+		if (registroJ005 == null) {
+			registroJ005 = new ArrayList<RegistroJ005>();
+		}
 		return registroJ005;
 	}
 
-	public void setRegistroJ005(RegistroJ005 registroJ005) {
+	public void setRegistroJ005(List<RegistroJ005> registroJ005) {
 		this.registroJ005 = registroJ005;
 	}
 
